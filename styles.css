@@ -314,20 +314,20 @@ a {
         align-items: center;
     }
     .text-block, .body-text, .why-yellow, .step-desc {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .headline, .phase-title {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
     .logo-container img, .avatar-img {
-        max-width: 150px;
-        max-height: calc(45vh - 80px);
+        max-width: 120px;
+        max-height: calc(40vh - 80px);
         margin-bottom: 1rem;
         object-fit: contain;
     }
     .graphic-img {
-        max-height: calc(45vh - 80px);
-        max-width: 90%;
+        max-height: calc(40vh - 80px);
+        max-width: 85%;
         width: auto;
         object-fit: contain;
     }
