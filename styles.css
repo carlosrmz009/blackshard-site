@@ -321,13 +321,13 @@ a {
     }
     .logo-container img, .avatar-img {
         max-width: 150px;
-        max-height: 100%;
+        max-height: calc(45vh - 80px);
         margin-bottom: 1rem;
         object-fit: contain;
     }
     .graphic-img {
-        max-height: 100%;
-        max-width: 100%;
+        max-height: calc(45vh - 80px);
+        max-width: 90%;
         width: auto;
         object-fit: contain;
     }
