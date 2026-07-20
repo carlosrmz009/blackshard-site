@@ -36,8 +36,11 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
     scrollbar-width: none;
+}
+
+.swipe-indicator {
+    display: none;
 }
 .app-container::-webkit-scrollbar {
     display: none;
@@ -48,10 +51,12 @@ body {
     height: 100vh;
     flex: 0 0 100vw;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     display: flex;
     flex-direction: column;
     position: relative;
     padding-top: 80px; /* Space for fixed nav */
+    overflow-y: auto;
 }
 
 a {
@@ -327,6 +332,7 @@ a {
     }
     
     .swipe-indicator {
+        display: block;
         position: absolute;
         bottom: 20px;
         right: 20px;
