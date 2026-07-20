@@ -7,32 +7,213 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="nav">
-        <a href="index.html" class="active">what</a>
-        <a href="why.html">why</a>
-        <a href="how.html">how</a>
-        <a href="which.html">which</a>
-        <a href="when.html">when</a>
-        <a href="who.html">who</a>
+    <nav class="nav-wrapper">
+        <div class="nav-track" id="navTrack">
+            <a href="#what" class="nav-item active">what</a>
+            <a href="#why" class="nav-item">why</a>
+            <a href="#how" class="nav-item">how</a>
+            <a href="#which" class="nav-item">which</a>
+            <a href="#when" class="nav-item">when</a>
+            <a href="#who" class="nav-item">who</a>
+        </div>
     </nav>
-    <div class="container">
-        <div class="left">
-            <div class="text-block">
-                <span class="brand-name">blackshard</span>
-                is a lightweight,<br>
-                efficient, and highly<br>
-                adaptive antivirus agent.<br>
-                it aims to be the world's<br>
-                fastest and smartest one.<br>
-                <span class="yellow-italic">wanna help me build it?</span>
+    <main class="app-container" id="appContainer">
+        <!-- WHAT -->
+        <section class="page-section" id="what">
+            <div class="container">
+                <div class="left">
+                    <div class="text-block">
+                        <span class="brand-name">blackshard</span>
+                        is a lightweight,<br>
+                        efficient, and highly<br>
+                        adaptive antivirus agent.<br>
+                        it aims to be the world's<br>
+                        fastest and smartest one.<br>
+                        <span class="yellow-italic">wanna help me build it?</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="logo-container">
+                        <img src="assets/logo.png" alt="blackshard logo">
+                        <div class="logo-text">blackshard</div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="right">
-            <div class="logo-container">
-                <img src="logo.png" alt="blackshard logo">
-                <div class="logo-text">blackshard</div>
+            <div class="swipe-indicator" id="swipeIndicator">swipe left &rarr;</div>
+        </section>
+
+        <!-- WHY -->
+        <section class="page-section" id="why">
+            <div class="container">
+                <div class="left">
+                    <div class="headline">
+                        we're reaching<br>
+                        doomsday.
+                    </div>
+                    <div class="body-text">
+                        today's net demands privacy<br>
+                        and security. yet, hackers<br>
+                        now have unrestricted access<br>
+                        to an arsenal of AI-powered<br>
+                        exploits.
+                    </div>
+                    <div class="why-yellow">
+                        we haven't learned<br>
+                        anything, have we?
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/whystatistics.png" alt="Statistics" class="graphic-img">
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <!-- HOW -->
+        <section class="page-section" id="how">
+            <div class="container">
+                <div class="left">
+                    <div class="headline">
+                        shardnet
+                    </div>
+                    <div class="body-text">
+                        traditional AV waits hours<br>
+                        for centralized corporate<br>
+                        servers to push signature<br>
+                        updates. that's a death<br>
+                        sentence.
+                    </div>
+                    <div class="why-yellow">
+                        when blackshard detects an<br>
+                        unknown threat, it gossips a<br>
+                        signature ("shard") to all of<br>
+                        the users in shardnet.
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/howgraphic.png" alt="Delta Engine Network" class="graphic-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- WHICH -->
+        <section class="page-section" id="which">
+            <div class="container">
+                <div class="left">
+                    <div class="headline">
+                        timeless, universal<br>
+                        protection.
+                    </div>
+                    <div class="body-text">
+                        a lot of vital<br>
+                        infrastructure relies on<br>
+                        outdated and vulnerable<br>
+                        software. blackshard is<br>
+                        designed to target these<br>
+                        high risk environments...
+                    </div>
+                    <div class="why-yellow">
+                        even on legacy architectures.
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/whichgraphic.png" alt="Statistics" class="graphic-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- WHEN -->
+        <section class="page-section" id="when">
+            <div class="roadmap-container">
+                <div class="roadmap-header">
+                    <img src="assets/logo.png" alt="logo">
+                    <div class="roadmap-title">
+                        blackshard
+                        <span>roadmap</span>
+                    </div>
+                </div>
+                
+                <div class="phase-title">phase 1</div>
+                <div class="phase-box">
+                    <div class="phase-step">
+                        <div class="step-title">modern windows client</div>
+                        <div class="step-desc">most urgent in terms of<br>availability</div>
+                    </div>
+                    <div class="step-arrow">&rarr;</div>
+                    <div class="phase-step">
+                        <div class="step-title">GUI</div>
+                        <div class="step-desc">terminals are scary</div>
+                    </div>
+                    <div class="step-arrow">&rarr;</div>
+                    <div class="phase-step">
+                        <div class="step-title">p2p shardnet</div>
+                        <div class="step-desc">secure, serverless<br>gossip</div>
+                    </div>
+                </div>
+
+                <div class="phase-title">phase 2</div>
+                <div class="phase-box">
+                    <div class="phase-step">
+                        <div class="step-title">cross-platform clients</div>
+                        <div class="step-desc">linux / macOS support</div>
+                    </div>
+                    <div class="step-arrow">&rarr;</div>
+                    <div class="phase-step">
+                        <div class="step-title">legacy compatibility</div>
+                        <div class="step-desc">for deprecated OSes</div>
+                    </div>
+                    <div class="step-arrow">&rarr;</div>
+                    <div class="phase-step">
+                        <div class="step-title">collaboration</div>
+                        <div class="step-desc">with AV / cybersecurity<br>firms</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHO -->
+        <section class="page-section" id="who">
+            <div class="container">
+                <div class="left">
+                    <div class="headline">
+                        howdy!
+                    </div>
+                    <div class="body-text">
+                        my name is carlos ramirez.<br>
+                        I'm building <span class="text-bold">blackshard</span>, but<br>
+                        I can't do it by myself. I<br>
+                        need <span class="text-yellow text-bold">YOU</span> to help.<br><br>
+                        you can make a github<br>
+                        contribution, donate to the<br>
+                        project, or simply share it.
+                    </div>
+                    <div class="why-yellow">
+                        i'm counting on you!
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="assets/avatar.png" alt="Avatar" class="avatar-img">
+                    <div class="social-links">
+                        <a href="https://placeholder.com" class="social-link">
+                            <img src="assets/github-icon.png" alt="github">
+                            <span>github</span>
+                        </a>
+                        <a href="https://placeholder.com" class="social-link">
+                            <img src="assets/sponsor-icon.png" alt="sponsor">
+                            <span>sponsor</span>
+                        </a>
+                        <a href="https://placeholder.com" class="social-link">
+                            <img src="assets/donate-icon.png" alt="donate">
+                            <span>donate</span>
+                        </a>
+                        <a href="https://placeholder.com" class="social-link">
+                            <img src="assets/x-icon.png" alt="x.com">
+                            <span>x.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
 </html>
