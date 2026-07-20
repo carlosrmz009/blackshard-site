@@ -312,7 +312,14 @@ a {
     }
     .logo-container img, .avatar-img {
         max-width: 150px;
+        max-height: 30vh;
         margin-bottom: 1rem;
+        object-fit: contain;
+    }
+    .graphic-img {
+        max-height: 40vh;
+        width: auto;
+        object-fit: contain;
     }
     .logo-text {
         font-size: 2rem;

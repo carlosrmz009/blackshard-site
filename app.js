@@ -68,6 +68,30 @@ navItems.forEach((item, idx) => {
     });
 });
 
+// Fix trackpad/wheel hypersensitivity
+let isWheeling = false;
+appContainer.addEventListener('wheel', (e) => {
+    // Only intercept horizontal trackpad swipes
+    if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+        e.preventDefault();
+        if (isWheeling) return;
+        isWheeling = true;
+        
+        const direction = e.deltaX > 0 ? 1 : -1;
+        const currentIdx = Math.round(appContainer.scrollLeft / window.innerWidth);
+        const nextIdx = Math.max(0, Math.min(navItems.length - 1, currentIdx + direction));
+        
+        appContainer.scrollTo({
+            left: nextIdx * window.innerWidth,
+            behavior: 'smooth'
+        });
+        
+        setTimeout(() => {
+            isWheeling = false;
+        }, 600); // Lockout duration to prevent multiple jumps
+    }
+}, { passive: false });
+
 // Initial setup
 // Need a tiny timeout to ensure fonts/layout are loaded before calculating offsets
 setTimeout(updateNav, 100);
