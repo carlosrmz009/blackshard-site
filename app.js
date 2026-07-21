@@ -61,9 +61,10 @@ window.addEventListener('resize', updateNav);
 navItems.forEach((item, idx) => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
+        const isMobile = window.innerWidth <= 768;
         appContainer.scrollTo({
             left: idx * window.innerWidth,
-            behavior: 'smooth'
+            behavior: isMobile ? 'smooth' : 'auto'
         });
     });
 });
@@ -81,9 +82,10 @@ appContainer.addEventListener('wheel', (e) => {
         const currentIdx = Math.round(appContainer.scrollLeft / window.innerWidth);
         const nextIdx = Math.max(0, Math.min(navItems.length - 1, currentIdx + direction));
         
+        const isMobile = window.innerWidth <= 768;
         appContainer.scrollTo({
             left: nextIdx * window.innerWidth,
-            behavior: 'smooth'
+            behavior: isMobile ? 'smooth' : 'auto'
         });
         
         setTimeout(() => {
