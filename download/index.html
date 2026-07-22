@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blackshard - download</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .download-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+        }
+        .coming-soon {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: var(--accent-color);
+        }
+        .signpath-info {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        .signpath-logo {
+            max-width: 300px;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .coming-soon {
+                font-size: 2rem;
+            }
+            .signpath-info {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="download-container">
+        <div class="coming-soon">binaries coming soon!</div>
+        <div class="signpath-info">Secure signing provided by our friends at the SignPath Foundation</div>
+        <img src="../assets/signpath-logo.svg" alt="SignPath Foundation" class="signpath-logo">
+    </div>
+</body>
+</html>
